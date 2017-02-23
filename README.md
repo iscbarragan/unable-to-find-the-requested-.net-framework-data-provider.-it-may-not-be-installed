@@ -1,5 +1,5 @@
 # unable-to-find-the-requested-.net-framework-data-provider.-it-may-not-be-installed
-Posible solution for "unable to find the requested .net framework data provider. it may not be installed"
+Posible solution for "unable to find the requested .net framework data provider. it may not be installed" when you try to connecto to a database from Visual Studio. That was my problem.
 
 You need to check in the two versions files 
 
