@@ -15,6 +15,18 @@ Search the <DbProviderFactories /> and delete it from machine.config.default
       <DbProviderFactories /> (delete this line)  
  </system.data>
  
+ machine.config you need to delete <DbProviderFactories /> 
+
+<system.data>
+    <DbProviderFactories>
+
+<add name="Microsoft SQL Server Compact Data Provider" invariant="System.Data.SqlServerCe.3.5" description=".NET Framework Data Provider for Microsoft SQL Server Compact" type="System.Data.SqlServerCe.SqlCeProviderFactory, System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken="/>
+<add name="Microsoft SQL Server Compact Data Provider 4.0" invariant="System.Data.SqlServerCe.4.0" description=".NET Framework Data Provider for Microsoft SQL Server Compact" type="System.Data.SqlServerCe.SqlCeProviderFactory, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=\"/>
+
+    </DbProviderFactories> 
+    <DbProviderFactories /> (delete this)
+</system.data>
+ 
  (version 4)
  
  2.- Go to C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config  and open the 3 files:
